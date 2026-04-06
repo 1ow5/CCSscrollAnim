@@ -1,0 +1,71 @@
+
+*, *::before, *::after {margin: 0;padding: 0;box-sizing: border-box;}ul, ol {list-style: none;}a {text-decoration: none;color: inherit;}img {max-width: 100%;display: block;}button, input, textarea, select {font: inherit;}button {cursor: pointer;border: none;background: none;}
+html{
+    scroll-behavior: smooth;
+}
+.app-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.headerWrapper{
+
+}
+.linkWrapper{
+    width: 100%;
+    height: 150px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkContainer{
+    display: flex;
+    width: 90vw;
+    height: 100px;
+    align-items: center;
+}
+.headerContainer{
+
+
+}
+.blockLinkContainer{
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+.mainWrapper{
+    width: 100%;
+    height: 100%;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.mainBlock{
+    height: 600px;
+    display: flex;
+}
+.mainBlock1{
+
+    background-color: brown;
+}
+.mainBlock2{
+
+    background-color: cadetblue;
+}
+.mainBlock3{
+
+    background-color: darkcyan;
+}
+.footerWrapper{
+
+}
+.footerContainer{
+
+}
+.blockText{
+    font-weight: bold;
+    font-size: larger;
+}

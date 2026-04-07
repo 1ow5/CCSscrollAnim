@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+button {
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.catContainer {
+	min-width: 200px;
+	min-height: 200px;
+}
+img {
+	object-fit: cover;
+	width: 175px;
+	height: 175px;
+    animation: grow ease-in-out;
+    animation-timeline: view(inline 50% 30%);
+}
+.carousel {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    background-color: bisque;
+	width: 1400px;
+    height: 500px;
+	overflow-x: scroll;
+    animation: grow ease-in-out;
+    animation-timeline: view(inline 50% 30%);
+}
+@keyframes grow {
+	from {
+        transform: scale(1);
+	}
+	to {
+        transform: scale(1.2);
+	}
+}

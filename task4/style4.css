@@ -1,0 +1,68 @@
+
+/* *, *::before, *::after {margin: 0;padding: 0;box-sizing: border-box;}ul, a {text-decoration: none;color: inherit;}img {max-width: 100%;display: block;}button, input, textarea, select {font: inherit;}button {cursor: pointer;border: none;background: none;} */
+body{
+    min-height: 3000px;
+}
+.header{
+    height: 100vh;
+}
+ol{
+    list-style-type: decimal;
+    /*Обнуляющие стили не дают нумерации нормально отобразиться*/
+}
+.list-item{
+    animation: bounceInRight;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.textBox{
+    height: fit-content;
+    width: 400px;
+}
+.box-1{
+    background-color: burlywood;
+    animation: appearance ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 100% contain 50%;
+}
+.box-2{
+    background-color: cornflowerblue;
+    animation: animka ;
+    animation-timeline: view();
+    
+}
+@keyframes appearance{
+    from{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes bounceInRight {
+    from{
+        transform: skewX(400%);
+        opacity: 0;
+    }
+    to{
+        transform: skewX(0%);
+        opacity: 1;
+    
+    }
+}
+@keyframes animka {
+    0% {
+        transform: skewX(400%);
+        opacity: 0;
+    }
+    50% {
+        transform: skewX(200%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: skewX(0%);
+        opacity: 1;
+    }
+}
